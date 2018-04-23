@@ -1,0 +1,27 @@
+<import src="../../common/tpl/banner-swiper.wxml"/>
+<view>
+    <view class="block-title">
+         <text class="block-title-value">商城小程序 门店小程序开发</text>
+        <text class="block-title-assist"></text>
+    </view>
+    <view class="service-list">
+        <view class="service-item" wx:for="{{serviceList}}">
+            <image src="{{item.icon}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+
+        <view class="contact-info">
+        <view class="contact-info-title"><text>联系我们</text></view>
+        <view class="contact-info-list">
+            <view class="contact-info-item" wx:for="{{contactInfo}}">
+                <label style="background-image:url('{{item.icon}}')">{{item.title}}：</label>
+                <text class="contact-info-content" selectable="true">{{item.content}}</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="dingzhi">
+        <navigator class="dz-btn" url="../dingzhi/dingzhi">立即定制</navigator>
+    </view>
+</view>
