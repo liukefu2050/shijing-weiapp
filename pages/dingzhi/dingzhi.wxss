@@ -76,7 +76,7 @@
 
 .msg .tel text {
   padding-left: 30rpx;
-  background: url("http://www.gzyueyun.com/m/yueyun-mini-app/assets/img/tel.png") no-repeat left center/contain;
+  background: url("http://www.jajayun.com/wx_images/img/tel.png") no-repeat left center/contain;
 }
 
 .footer {

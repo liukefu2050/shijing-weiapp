@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "wx2113b869940062f0",
-	"projectname": "shijing-app",
+	"appid": "wx307e720f14f83782",
+	"projectname": "shijing-weiapp",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

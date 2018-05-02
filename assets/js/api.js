@@ -1,15 +1,14 @@
-var server  = 'https://www.gzyueyun.com',
-    root = server + '/yueyunapi',
-    imgRoot = server + '/yueyun';
+var server  = 'https://www.jajayun.com',
+    root = server + '/',
+    imgRoot = server + '/';
 
 var apiPath = {
-    getBannerList: root + '/wapController/getBannerList', // 获取Banner轮播图
-    getCaseList: root + '/wapController/getCaseWapList', // 获取成功案例列表
-    contact: root + '/mainController/note' // 提交联系信息
+  getBannerList: root + '/ad/adList', // 获取Banner轮播图
+  getCaseList: root + '/ad/adList', // 获取成功案例列表
+    contact: root + '/suggest/post.json' // 提交联系信息
 };
-
 var getImgFullPath = function(imgPath){
-    return imgRoot + '/' + imgPath.replace(/^\//, '');
+    return imgRoot + '/' + imgPath.replace(/^\// , '');
 }
 
 module.exports.apiPath = apiPath;

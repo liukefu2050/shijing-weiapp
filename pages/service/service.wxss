@@ -7,7 +7,7 @@
 
 .block-title-value {
   padding-left: 42px;
-  background: url("../../assets/img/block_title_bg.png") no-repeat left center;
+  background: url("http://www.jajayun.com/wx_images/img/block_title_bg.png") no-repeat left center;
 }
 
 .block-title-value text {
@@ -16,7 +16,7 @@
 
 .block-title-assist {
   padding-left: 42px;
-  background: url("../../assets/img/block_title_bg.png") no-repeat right center;
+  background: url("http://www.jajayun.com/wx_images/img/block_title_bg.png") no-repeat right center;
 }
 
 .service-list {
@@ -54,7 +54,7 @@
 .dingzhi {
   margin-top: 24rpx;
   padding: 60rpx 50rpx;
-  background: url("http://www.gzyueyun.com/m/yueyun-mini-app/assets/img/dz_bg.png") no-repeat bottom center/contain white;
+  background: url("http://www.jajayun.com/wx_images/img/dz_bg.png") no-repeat bottom center/contain white;
 }
 
 .flow-process {
@@ -90,7 +90,7 @@
   flex-grow: 1.5;
   width: 17rpx;
   height: 34rpx;
-  background: url("http://www.gzyueyun.com/m/yueyun-mini-app/assets/img/flow_process_right_arrow.png") no-repeat center/contain;
+  background: url("http://www.jajayun.com/wx_images/img/flow_process_right_arrow.png") no-repeat center/contain;
 }
 
 

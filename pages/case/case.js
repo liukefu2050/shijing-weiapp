@@ -14,7 +14,7 @@ Page({
         ]
     },
     onLoad: function () {
-        getApp().getBannerList(this);
+        //getApp().getBannerList(this);
         this.getCaseList();
     },
     onShareAppMessage: function () {

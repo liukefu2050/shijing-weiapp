@@ -12,9 +12,9 @@
             </view>
             <view class="input-group">
                 <label>联系电话</label>
-                <input type="text" name="phone" value="{{formData.phone.value}}" data-name="phone" placeholder="请输入您的电话号码" 
+                <input type="text" name="contact" value="{{formData.contact.value}}" data-name="contact" placeholder="请输入您的电话号码" 
                 bindinput="updateFormData" bindfocus="onFocus" bindblur="formCheck"/>
-                <view class="error-tips {{formData.phone.error && formData.phone.focused ? '' : 'hidden' }}">
+                <view class="error-tips {{formData.contact.error && formData.contact.focused ? '' : 'hidden' }}">
                     <icon type="warn" size="14"/><text>{{formData.phone.tips}}</text>
                 </view>
             </view>
@@ -28,9 +28,9 @@
             </view>
             <view class="input-group">
                 <label>留言</label>
-                <textarea name="word" value="{{formData.word.value}}" data-name="word" placeholder="请在这里填写您的定制要求" 
+                <textarea name="content" value="{{formData.content.value}}" data-name="content" placeholder="请在这里填写您的定制要求" 
                 bindinput="updateFormData" bindfocus="onFocus" bindblur="formCheck"/>
-                <view class="error-tips {{formData.word.error && formData.word.focused ? '' : 'hidden' }}">
+                <view class="error-tips {{formData.content.error && formData.content.focused ? '' : 'hidden' }}">
                     <icon type="warn" size="14"/><text>{{formData.word.tips}}</text>
                 </view>
             </view>

@@ -15,7 +15,7 @@ Page({
                 changed: false,
                 focused: false
             },
-            phone: {
+            contact: {
                 value: "",
                 error: false,
                 tips: "",
@@ -27,11 +27,17 @@ Page({
                 tips: "",
                 changed: false
             },
-            word: {
+            content: {
                 value: "",
                 error: false,
                 tips: "",
                 changed: false
+            },
+            from: {
+              value: "wx",
+              error: false,
+              tips: "",
+              changed: false
             }
         },
         formStatus: {
@@ -39,7 +45,7 @@ Page({
         }
     },
     onLoad: function () {
-        getApp().getBannerList(this);
+        //getApp().getBannerList(this);
 
         this.wxValidate = new wxValidate({
             rules: {
@@ -48,14 +54,14 @@ Page({
                     minlength: 2,
                     maxlength: 10
                 },
-                phone: {
+                contact: {
                     required: true,
                     mobile: true
                 },
                 email: {
                     required: false
                 },
-                word: {
+                content: {
                     required: true,
                     minlength: 1,
                     maxlength: 120
@@ -67,7 +73,7 @@ Page({
                     minlength: "输入2~10个字符",
                     maxlength: "输入2~10个字符"
                 },
-                phone: {
+                contact: {
                     required: "必填",
                     mobile: "无效的手机号"
                 },
@@ -75,7 +81,7 @@ Page({
                     required: "必填",
                     email: "无效的邮箱"
                 },
-                word: {
+                content: {
                     required: "必填",
                     minlength: "输入1~120个字符",
                     maxlength: "输入1~120个字符"
@@ -153,7 +159,7 @@ Page({
         var $this = this;
         var formData = e.detail.value;
         var result = this.wxValidate.formCheckAll(formData);
-
+        formData.form = "shijing-weiapp";
         if (result.valid) { // 验证通过
             this.setData({
                 "formStatus.submitting": true
